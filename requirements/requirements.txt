@@ -7,7 +7,13 @@
 asgiref==3.4.1
     # via django
 django==4.0
+    # via
+    #   -r requirements/requirements.in
+    #   djangorestframework
+djangorestframework==3.13.1
     # via -r requirements/requirements.in
+pytz==2021.3
+    # via djangorestframework
 sqlparse==0.4.2
     # via django
 tzdata==2021.5
