@@ -1,6 +1,7 @@
 
 # Personally added folders to ignore
 /blogapi
+db_credentials.py
 
 # Folders to ignore from GitHub standard
 
