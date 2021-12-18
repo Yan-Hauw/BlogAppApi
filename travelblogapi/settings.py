@@ -12,7 +12,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import os
-from constants import db_credentials
+import constants.db_credentials
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -22,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = db_credentials.secret_key
+SECRET_KEY = constants.db_credentials.secret_key
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -80,11 +81,11 @@ WSGI_APPLICATION = "travelblogapi.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": db_credentials.name,
-        "HOST": db_credentials.host,
-        "PORT": db_credentials.port,
-        "USER": db_credentials.username,
-        "PASSWORD": db_credentials.password,
+        "NAME": constants.db_credentials.name,
+        "HOST": constants.db_credentials.host,
+        "PORT": constants.db_credentials.port,
+        "USER": constants.db_credentials.username,
+        "PASSWORD": constants.db_credentials.password,
     }
 }
 
