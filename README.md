@@ -4,10 +4,10 @@ Built using Django Rest Framework (DRF) using default SQLite 3 database. Unless 
 
 ### Blog post field types and details:
 
-id: automatically set to be 1 greater than id of object with greatest id in database.
-author_name: cannot be empty string, max length 100 characters
-title: cannot be empty string, max length 50 characters
-content: cannot be empty string, no restriction on max length, limitation of SQLite 3 database
+id: automatically set to be 1 greater than id of object with greatest id in database. <br>
+author_name: cannot be empty string, max length 100 characters <br>
+title: cannot be empty string, max length 50 characters <br>
+content: cannot be empty string, no restriction on max length, limitation of SQLite 3 database <br>
 created_at: django automatically initializes this to be the time at which request is sent
 
 ### Base URL
