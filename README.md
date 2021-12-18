@@ -12,7 +12,7 @@ created_at: django automatically initializes this to be the time at which reques
 
 ### Base URL
 
-WIll provide once Django API successfully hosted
+base-url: https://travel-blog-api-778.herokuapp.com
 
 ## Create a blog post
 
