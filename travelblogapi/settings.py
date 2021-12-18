@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-7$*qp-%5dx5jfvb31cgo=(@g2oo44yv8j*u+#y%5k#9x=gm#&t
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["travel-blog-api-778.herokuapp.com", "127.0.0.1"]
+ALLOWED_HOSTS = ["travel-blog-api-778.herokuapp.com", "127.0.0.1", "127.0.0.1:5000"]
 
 
 # Application definition
@@ -78,8 +78,12 @@ WSGI_APPLICATION = "travelblogapi.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "d699ipteehnuqb",
+        "HOST": "ec2-107-21-211-154.compute-1.amazonaws.com",
+        "PORT": "5432",
+        "USER": "holcsmlkifxtyo",
+        "PASSWORD": "432c6b1739a819c8e5b96b2bfd5b61b2a779d6e4be22972e3c4bcdfd762e05f2",
     }
 }
 
