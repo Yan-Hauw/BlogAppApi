@@ -16,8 +16,8 @@ WIll provide once Django API successfully hosted
 
 ## Create a blog post
 
-method: POST
-endpoint: /api/create/
+method: POST <br>
+endpoint: /api/create/ <br>
 required data as below:
 
 ### Sample request and response object
@@ -46,8 +46,8 @@ No need to put id and created_at field in request, automatically created
 
 ## Get all blog posts
 
-method: GET
-endpoint: /api/
+method: GET <br>
+endpoint: /api/ <br>
 No data required
 
 ### Sample response object
@@ -77,8 +77,8 @@ Response
 
 ## Get specific blog post
 
-method: GET
-endpoint: /api/{$id}/
+method: GET <br>
+endpoint: /api/{$id}/ <br>
 Must specify id of post to get in endpoint url
 
 ### Sample request and response object
@@ -99,8 +99,8 @@ Response
 
 ## Delete specific blog post
 
-method: DELETE
-endpoint: /api/delete/{$id}/
+method: DELETE <br>
+endpoint: /api/delete/{$id}/ <br>
 Must specify id of post to delete in endpoint url
 
 ### Sample request and response object
