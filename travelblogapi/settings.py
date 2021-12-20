@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get("APP_SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG")
 
-ALLOWED_HOSTS = ["travel-blog-api-778.herokuapp.com", "127.0.0.1"]
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS")
 
 
 # Application definition
@@ -91,14 +91,14 @@ WSGI_APPLICATION = "travelblogapi.wsgi.application"
 
 DATABASES = {
     "default": {
-        # "ENGINE": "django.db.backends.postgresql",
-        # "NAME": os.environ.get("DATABASE_URL_NAME"),
-        # "HOST": os.environ.get("DATABASE_URL_HOST"),
-        # "PORT": os.environ.get("DATABASE_URL_PORT"),
-        # "USER": os.environ.get("DATABASE_URL_USER"),
-        # "PASSWORD": os.environ.get("DATABASE_URL_PASSWORD"),
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": os.environ.get("DATABASE_URL_NAME"),
+        "HOST": os.environ.get("DATABASE_URL_HOST"),
+        "PORT": os.environ.get("DATABASE_URL_PORT"),
+        "USER": os.environ.get("DATABASE_URL_USER"),
+        "PASSWORD": os.environ.get("DATABASE_URL_PASSWORD"),
+        # "ENGINE": "django.db.backends.sqlite3",
+        # "NAME": BASE_DIR / "db.sqlite3",
     }
 }
 
