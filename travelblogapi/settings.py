@@ -27,7 +27,7 @@ SECRET_KEY = "h)rv@q*5&2!!zvr5xa^opxn%ew!i$qaun57j#1pgvga!&dyl(h"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["travel-blog-api-778.herokuapp.com", "127.0.0.1", "127.0.0.1:5000"]
+ALLOWED_HOSTS = ["travel-blog-api-778.herokuapp.com", "127.0.0.1", "127.0.0.1:8000"]
 
 
 # Application definition
