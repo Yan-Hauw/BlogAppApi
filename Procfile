@@ -1,1 +1,1 @@
-web: waitress-serve --listen=*:8000 travelblogapi.wsgi:application
+waitress-serve --listen=*:8000 travelblogapi.wsgi:application
