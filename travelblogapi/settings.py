@@ -91,12 +91,14 @@ WSGI_APPLICATION = "travelblogapi.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.environ.get("DATABASE_URL_NAME"),
-        "HOST": os.environ.get("DATABASE_URL_HOST"),
-        "PORT": os.environ.get("DATABASE_URL_PORT"),
-        "USER": os.environ.get("DATABASE_URL_USER"),
-        "PASSWORD": os.environ.get("DATABASE_URL_PASSWORD"),
+        # "ENGINE": "django.db.backends.postgresql",
+        # "NAME": os.environ.get("DATABASE_URL_NAME"),
+        # "HOST": os.environ.get("DATABASE_URL_HOST"),
+        # "PORT": os.environ.get("DATABASE_URL_PORT"),
+        # "USER": os.environ.get("DATABASE_URL_USER"),
+        # "PASSWORD": os.environ.get("DATABASE_URL_PASSWORD"),
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
     }
 }
 
