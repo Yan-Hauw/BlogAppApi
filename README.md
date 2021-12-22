@@ -1,4 +1,4 @@
-# Travel-Blog-Api
+# Blog-App-Api
 
 Built using Django Rest Framework (DRF) using default SQLite 3 database. Unless the request sent by frontend follows below specifications, an automated HTTP response with error message is returned by DRF
 
